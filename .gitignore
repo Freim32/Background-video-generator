@@ -1,0 +1,6 @@
+.vscode/
+src/__pycache__
+Frame/*
+Output/*
+!Frame/.gitkeep
+!Output/.gitkeep
