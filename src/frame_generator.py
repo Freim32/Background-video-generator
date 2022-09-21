@@ -284,12 +284,13 @@ def generate_animation(
             frame.save(f"{frame_output_folder}/{FRAME_NUMBER}.png")
             FRAME_NUMBER+=1
         
-        if grow_image.size + animation_step < grow_image_size: 
+        if grow_image.size + animation_step <= grow_image_size: 
             frame = image_animation(background,grow_image,animation_step)
         else:
             grow_image.set_size(grow_image_size)
+            frame = utils.paste_image(grow_image.image,background,grow_image.position)
         
-        if drop_image.size -animation_step > 0:
+        if drop_image.size - animation_step > 0:
             frame = image_animation(frame,drop_image,-animation_step)
             
         else:

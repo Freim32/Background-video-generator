@@ -45,10 +45,10 @@ MAX_IMAGE_DIMENSION = 120
 ANIMATION_STEP = 2   #If it is odd it could generate graphical bugs
 
 #Minimum duration of each single animation
-MIN_ANIMATION_DURATION = 2
+MIN_ANIMATION_DURATION = 4
 
 #Maximum duration of each single animation
-MAX_ANIMATION_DURATION = 6
+MAX_ANIMATION_DURATION = 8
 
 #Video settings 
 
@@ -62,7 +62,7 @@ VIDEO_NAME = "Video01"
 FPS = 30
 
 #Duration of the video in seconds
-VIDEO_DURATION = 5 
+VIDEO_DURATION = 20
 
 
 @utils.timer()
